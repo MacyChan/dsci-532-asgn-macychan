@@ -8,6 +8,7 @@ dropdown = ["Intelligence", "Strength",	"Speed", "Durability", "Power", "Combat"
 
 # Setup app and layout/frontend
 app = Dash(__name__,  external_stylesheets=['https://codepen.io/chriddyp/pen/bWLwgP.css'])
+server = app.server
 app.layout = html.Div([
     html.Iframe(
         id='scatter',
@@ -19,7 +20,7 @@ app.layout = html.Div([
         placeholder='Select x axis...'),
     dcc.Dropdown(
         id='ycol-widget',
-        value='Strength', 
+        value='Strength',
         options=[{'label': col, 'value': col} for col in dropdown],
         placeholder='Select y axis...')])
 
