@@ -1,10 +1,6 @@
-from turtle import color
 from dash import Dash, html, dcc, Input, Output
 import altair as alt
-from numpy import character
 import pandas as pd
-from vega_datasets import data
-
 
 # Read in global data
 character_matrix = pd.read_csv('data/characters_stats.csv')
