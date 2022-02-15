@@ -3,7 +3,7 @@ import altair as alt
 import pandas as pd
 
 # Read in global data
-character_matrix = pd.read_csv('../data/characters_stats.csv')
+character_matrix = pd.read_csv('data/characters_stats.csv')
 dropdown = ["Intelligence", "Strength",	"Speed", "Durability", "Power", "Combat"]
 
 # Setup app and layout/frontend
